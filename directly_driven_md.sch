@@ -19771,7 +19771,7 @@ grid 2.54 mm</description>
 </class>
 </classes>
 <parts>
-<part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="0207/15" package3d_urn="urn:adsk.eagle:package:23492/1"/>
+<part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="0207/15" package3d_urn="urn:adsk.eagle:package:23492/1" value="MOTOR"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC2" library="SamacSys_Parts" deviceset="LM78L12ACZ_NOPB" device=""/>
