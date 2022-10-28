@@ -19808,6 +19808,7 @@ grid 2.54 mm</description>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19906,6 +19907,9 @@ grid 2.54 mm</description>
 </instance>
 <instance part="P+5" gate="1" x="45.72" y="88.9" smashed="yes">
 <attribute name="VALUE" x="43.18" y="83.82" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+6" gate="1" x="22.86" y="88.9" smashed="yes">
+<attribute name="VALUE" x="20.32" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -20020,6 +20024,15 @@ grid 2.54 mm</description>
 <wire x1="45.72" y1="81.28" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="V+"/>
+<wire x1="20.32" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="63.5" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="63.5" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<junction x="22.86" y="63.5"/>
+<pinref part="P+6" gate="1" pin="+12V"/>
+</segment>
 </net>
 <net name="N$23" class="0">
 <segment>
@@ -20037,14 +20050,6 @@ grid 2.54 mm</description>
 <junction x="50.8" y="60.96"/>
 <pinref part="IC1" gate="G$1" pin="B_OUTPUT"/>
 <wire x1="20.32" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="V+"/>
-<wire x1="20.32" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="63.5" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
